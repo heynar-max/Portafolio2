@@ -75,10 +75,10 @@ const ContactoStyled = styled.div`
         display: flex;
         justify-content: center;
         flex-direction: column;
-        border-left: 2px solid var(--color-letra-blanco);
-        border-top: 2px solid var(--color-letra-blanco);
-        border-bottom: 2px solid var(--color-letra-blanco);
-        border-right: 2px solid var(--color-letra-blanco);
+        border-left: 2px solid var(--color-naranja);
+        border-top: 2px solid var(--color-naranja);
+        border-bottom: 2px solid var(--color-naranja);
+        border-right: 2px solid var(--color-naranja);
         @media screen and (max-width:700px){
             width: 400px;
             height: 180px;
