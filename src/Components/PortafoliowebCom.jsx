@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Tarjetas from './Tarjetas'
 import vista3 from '../Assets/vista.jpg'
 import Porta from '../Assets/Portafolioimg.png'
+import Turismo from '../Assets/turismo.png'
 import { InnerLayout } from '../Styles/Layouts'
 const Portafolioweb = () => {
     return (
@@ -22,10 +23,10 @@ const Portafolioweb = () => {
             paragraph={'Es una pagina de exhibicion de las figuras 3D'}
             />
             <Tarjetas
-            image={Porta}
-            vistaso={'Echele un vistaso'}
-            subtitle={'Portafolio'}
-            paragraph={'Son mis portafolios para mi experiencia en programacion'}
+            image={Turismo}
+            turismo={'Echele un vistaso'}
+            subtitle={'Turismo Buga'}
+            paragraph={'Una pagina de turismo Buga'}
             />
             
         </div>

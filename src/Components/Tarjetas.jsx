@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Tarjetas = ({title, subtitle, paragraph, image, vistaso, vista}) => {
+const Tarjetas = ({title, subtitle, paragraph, image, vistaso, vista, turismo}) => {
     return (
         <>
         <TarjetaStyled>
@@ -9,6 +9,7 @@ const Tarjetas = ({title, subtitle, paragraph, image, vistaso, vista}) => {
                 <img src = {image} alt=''/>
                 <a href='https://portafolioheynar.netlify.app/' target="_blank" rel="noreferrer" >{vistaso}</a>
                 <a href='https://portafolioheynar.netlify.app/' target="_blank" rel="noreferrer" >{vista}</a>
+                <a href='https://turismobuga.netlify.app/' target="_blank" rel="noreferrer" >{turismo}</a>
                 <h4>{title}</h4>
                 <p>{paragraph}</p>
                 <h6>{subtitle}</h6>
