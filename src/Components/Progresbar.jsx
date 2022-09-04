@@ -5,9 +5,9 @@ const Progresbar = ({title, text,  width }) => {
     return (
         <ProgresbarStyled>
             <h6>{title}</h6>
-            <div className="progress-bar">
+            <div className="progress__bar">
                 <p>{text}</p>
-                <div className="progress">
+                <div className="progressBar">
                     <span style={{width: width}}></span>
                 </div>
             </div>
@@ -27,7 +27,7 @@ const ProgresbarStyled = styled.div`
     }
 
 
-    .progress-bar{
+    .progress__bar{
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -41,7 +41,7 @@ const ProgresbarStyled = styled.div`
                 
             
         }
-    .progress{
+    .progressBar{
         
         width: 100%;
         height: 1rem;

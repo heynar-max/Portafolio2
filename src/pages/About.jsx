@@ -3,7 +3,7 @@ import Title from '../Components/Title'
 import SobreMi from '../Components/SobreMi'
 import { MainLayout } from '../Styles/Layouts'
 
-const Sobre = () => {
+const About = () => {
     return (
         <>
         <MainLayout>
@@ -14,4 +14,4 @@ const Sobre = () => {
     )
 }
 
-export default Sobre
+export default About

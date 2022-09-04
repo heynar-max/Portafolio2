@@ -17,29 +17,25 @@ const Navbar = () => {
                     <Menu open={showMobileMenu} >
                         <MenuItem>
                             <MenuItemLink as={Link} to={'/'} onClick={() => setShowMobileMenu(!showMobileMenu)} >
-                                
                             <Icon className="fas fa-home" />
                             Home
-                            
                             </MenuItemLink>
                         </MenuItem>
                         <MenuItem>
-                            <MenuItemLink as={Link} to={'/sobre'}  onClick={() => setShowMobileMenu(!showMobileMenu)}>
-                            
+                            <MenuItemLink as={Link} to={'/about'}  onClick={() => setShowMobileMenu(!showMobileMenu)}>
                             <Icon className="fas fa-user" />
-                            Sobre
-                            
+                            About
                             </MenuItemLink>
                         </MenuItem>
                         <MenuItem>
                             <MenuItemLink as={Link} to={'/portafolio'} onClick={() => setShowMobileMenu(!showMobileMenu)}>
-                            <Icon className="fas fa-cube" />
+                            <Icon className=" fas fa-briefcase" />
                             Portafolio
                             </MenuItemLink>
                         </MenuItem>
                         <MenuItem>
-                            <MenuItemLink as={Link} to={'/portafolioweb'} onClick={() => setShowMobileMenu(!showMobileMenu)}>
-                            <Icon className="fas fa-briefcase" />
+                            <MenuItemLink as={Link} to={'/blog'} onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                            <Icon className="fas fa-cube" />
                             Blog
                             </MenuItemLink>
                         </MenuItem>

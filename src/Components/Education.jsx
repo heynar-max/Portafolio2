@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Icon } from '../Styles/Icons'
-import Expeyeduitem from './Expeyeduitem'
+import EducationItem from './EducationItem'
 
-const Expeyedu = () => {
+const Education = () => {
     return (
         <ExpeyeduStiled>
             
@@ -13,14 +13,14 @@ const Expeyedu = () => {
                 <div className='right-content'>
                 <div className='caja'>
                     <Icon className='fa fa-graduation-cap'></Icon>
-                    <Expeyeduitem 
+                    <EducationItem 
                         title={'fundamentos de programación python '}
                         year={'2021'}
                         subtitle={'Universidad Tecnologica de pereira'}
                         text={'Se realizo del 28 de abril al 16 de junio con una intensidad de 12 horas semanalaes de clases sincrónicas y 120 horas que son de trabajo autónomo y asincróno'}
                     />
                     <Icon className='fa fa-graduation-cap'></Icon>
-                    <Expeyeduitem 
+                    <EducationItem 
                         title={'Diplomado de Desarrollo de Aplicaciones Web'}
                         year={'2021'}
                         subtitle={'Universidad Tecnologica de pereira'}
@@ -31,14 +31,14 @@ const Expeyedu = () => {
                     
                     <div className='caja1'>
                     <Icon className='fa fa-suitcase'></Icon>
-                    <Expeyeduitem 
+                    <EducationItem 
                         title={'Diseñador de estructura 3d'}
                         year={'2020'}
                         subtitle={'Vista 3D'}
                         text={'Es una afición mas de mi vida, diseño estructuras en 3d para despues llevarlas a la impresora'}
                     />
                     <Icon className='fa fa-suitcase'></Icon>
-                    <Expeyeduitem 
+                    <EducationItem
                         title={'Programador Junior'}
                         year={'2021'}
                         subtitle={'Vista 3D'}
@@ -199,4 +199,4 @@ const ExpeyeduStiled = styled.div`
     }
 `;
 
-export default Expeyedu
+export default Education

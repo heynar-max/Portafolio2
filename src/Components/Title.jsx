@@ -16,7 +16,7 @@ const TitleStyled = styled.div`
         
 
     h2{
-        color var(--color-letra-blanco);
+        color: var(--color-letra-blanco);
         font-size: 4rem;
         font-weight: 600;
         position: relative;
@@ -34,7 +34,7 @@ const TitleStyled = styled.div`
         }
 
         p{
-            color var(--color-naranja);
+            color: var(--color-naranja);
         font-size: 4rem;
         font-weight: 600;
         position: relative;
@@ -54,7 +54,7 @@ const TitleStyled = styled.div`
         
         span{
             font-weight: 900;
-            color: #b4b3b011;
+            color: #b4b3b029;
             font-size: 8rem;
             position: absolute;
             top: -40%;
@@ -66,7 +66,7 @@ const TitleStyled = styled.div`
                 
             }
             @media screen and (max-width: 496px){
-                font-size: 5.5rem;
+                font-size: 5rem;
                 
             }
             @media screen and (max-width: 370px){

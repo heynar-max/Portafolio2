@@ -2,9 +2,9 @@ import { Route, Switch } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Contacto from "./pages/Contacto";
 import Home from "./pages/Home";
-import Portafolio from "./pages/Portafolio";
-import PortafolioWeb from "./pages/PortafolioWeb";
-import Sobre from "./pages/Sobre";
+import About from "./pages/About.jsx";
+import BlogPage from "./pages/BlogPage";
+import PortafolioPage from "./pages/PortafolioWeb";
 
 
 function App() {
@@ -15,14 +15,14 @@ function App() {
           <Route path="/" exact>
             <Home/>
           </Route>
-          <Route path="/sobre" exact>
-            <Sobre/>
+          <Route path="/about" exact>
+            <About/>
           </Route>
           <Route path="/portafolio" exact>
-            <Portafolio/>
+            <PortafolioPage/>
           </Route>
-          <Route path="/portafolioweb" exact>
-            <PortafolioWeb/>
+          <Route path="/blog" exact>
+            <BlogPage/>
           </Route>
           <Route path="/contacto" exact>
             <Contacto/>

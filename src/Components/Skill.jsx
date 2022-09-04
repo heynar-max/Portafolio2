@@ -3,27 +3,27 @@ import styled from 'styled-components'
 import Progresbar from './Progresbar';
 
 
-const Habilidades = () => {
+const Skill = () => {
     return (
         
-        <HabilidadesStyled>
-            <div className='container'>
+        <SkillStyled>
+            <div className='skill__container'>
             <div className='h3'>Mis Habilidades</div>
-            <div className='habilidad'>
+            <div className='skill__progrebar'>
                 <Progresbar
                     title={'HTML5'}
-                    width={'30%'}
-                    text={'30%'}
+                    width={'60%'}
+                    text={'60%'}
                 />
                 <Progresbar
                     title={'STYLE COMPONENTS'}
-                    width={'30%'}
-                    text={'30%'}
+                    width={'60%'}
+                    text={'60%'}
                 />
                 <Progresbar
                     title={'JAVASCRIPT'}
-                    width={'30%'}
-                    text={'30%'}
+                    width={'60%'}
+                    text={'60%'}
                 />
                 <Progresbar
                     title={'PYTHON'}
@@ -32,8 +32,8 @@ const Habilidades = () => {
                 />
                 <Progresbar
                     title={'REACT JS'}
-                    width={'30%'}
-                    text={'30%'}
+                    width={'60%'}
+                    text={'60%'}
                 />
                 <Progresbar
                     title={'PHOTOSHOP'}
@@ -57,10 +57,10 @@ const Habilidades = () => {
                 />
             </div>
             </div>
-        </HabilidadesStyled>
+        </SkillStyled>
     )
 }
-const HabilidadesStyled = styled.section`
+const SkillStyled = styled.section`
 
 .h3{
                 font-size: 1.5rem;
@@ -72,7 +72,7 @@ const HabilidadesStyled = styled.section`
                 margin-bottom:2rem;
 
     }
-    .habilidad{
+    .skill__progrebar{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-row-gap: 3rem;
@@ -89,4 +89,4 @@ const HabilidadesStyled = styled.section`
     }
 `;
 
-export default Habilidades
+export default Skill

@@ -5,21 +5,23 @@ import {Icon }from '../Styles/Icons'
 const Contact = () => {
     return (
         <ContactoStyled>
-            <div className='container'>
+            <div className='contact__container'>
                 
-                <div className='icono'>
+                <div className='contact__icono'>
                         <a href="https://www.linkedin.com/in/heynar-soto-holguin-bb7a43213/" target="_blank" rel="noreferrer" ><Icon className="fab fa-linkedin" /></a>
                         <a href='https://github.com/heynar-max' target="_blank" rel="noreferrer" ><Icon className="fab fa-github" /></a>
                         <a href='https://www.instagram.com/heynar_max/' target="_blank" rel="noreferrer"><Icon className="fab fa-instagram-square" /></a>
                         <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><Icon className="fab fa-facebook-square" /></a>
                         </div>
-                <div className='content'>
+                <div className='contact__content'>
                     <h3>ESTOY BUSCANDO UN TRABAJO</h3>
                     <span>CONECTEMOS:: </span>
                 </div>
-                <div className='url'>
+                <div className='contact__url'>
                     <a href="https://www.facebook.com/heynar.sotoholguin" target="_blank" rel="noreferrer"><p>https://www.facebook.com/heynar.sotoholguin</p></a>
+                    <br/>
                     <a href="https://www.linkedin.com/in/heynar-soto-holguin-bb7a43213/" target="_blank" rel="noreferrer"><p>https://www.linkedin.com/in/heynar-soto-holguin-bb7a43213/</p></a>
+                    <br/>
                     <a href="https://www.instagram.com/heynar_max/" target="_blank" rel="noreferrer"><p>https://www.instagram.com/heynar_max/</p></a>
 
                 </div>
@@ -35,11 +37,16 @@ const ContactoStyled = styled.div`
     justify-content: center;
     margin-top: 10rem;
 
-    .icono{
+    .contact__icono{
         margin-top: 5rem;
         display: flex;
         justify-content: center;
         margin-bottom: 10rem;
+        @media screen and (max-width:570px){
+            margin-top: 0rem;
+        }
+            
+        }
             i{
                 color: var(--color-naranja);
                 width: 100px;
@@ -67,8 +74,8 @@ const ContactoStyled = styled.div`
                     font-size: 30px;
                 }
         }
-    }
-    .content{
+    
+    .contact__content{
         margin-bottom: 5rem;
         width: 500px;
         height: 200px;
@@ -87,12 +94,13 @@ const ContactoStyled = styled.div`
         @media screen and (max-width:580px){
             width: 360px;
             height: 120px;
+            margin-left:2.5rem ;
             
         }
         @media screen and (max-width:440px){
             width: 260px;
             height: 100px;
-            
+            margin-left:2rem ;
         }
         @media screen and (max-width:370px){
             width: 240px;
@@ -111,11 +119,11 @@ const ContactoStyled = styled.div`
                 margin-left: 1.8rem;
             }
             @media screen and (max-width:580px){
-                font-size: .8rem;
+                font-size: 1rem;
                 margin-left: 1.4rem;
             }
             @media screen and (max-width:440px){
-                font-size: .6rem;
+                font-size: .8rem;
                 margin-left: 1rem;
             }
             
@@ -132,16 +140,16 @@ const ContactoStyled = styled.div`
                 margin-left: 1.8rem;
             }
             @media screen and (max-width:580px){
-                font-size: .8rem;
+                font-size: 1rem;
                 margin-left: 1.4rem;
             }
             @media screen and (max-width:440px){
-                font-size: .6rem;
+                font-size: .9rem;
                 margin-left: 1rem;
             }
         }
     }
-    .url{
+    .contact__url{
         margin-top: 10rem;
         display: flex;
         flex-direction: column;
@@ -154,15 +162,15 @@ const ContactoStyled = styled.div`
                 
             }
             @media screen and (max-width:580px){
+                font-size: 1rem;
+                
+            }
+            @media screen and (max-width:470px){
                 font-size: .8rem;
                 
             }
-            @media screen and (max-width:440px){
+            @media screen and (max-width:380px){
                 font-size: .6rem;
-                
-            }
-            @media screen and (max-width:370px){
-                font-size: .4rem;
                 
             }
         }

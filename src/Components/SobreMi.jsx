@@ -2,29 +2,27 @@ import React from 'react'
 import Avatar from '../Assets/heynar.jpg'
 import styled from 'styled-components'
 import { Icon } from '../Styles/Icons'
-import Expeyedu from './Expeyedu'
+import Education from './Education'
 import Separador from '../Styles/Separador'
-import Habilidades from './Habilidades'
+import Habilidades from './Skill'
 
 const SobreMi = () => {
     return (
         <>
-            
-            
             <ImagenStyled>
             
-            <div className='left-content'>
+            <figure className='about__avatar'>
                 <img src={Avatar} alt=''/>
-            </div>
+            </figure>
 
             
             
-                <div className='container'>
-                <div className='right-content'>
+                <div className='about__container'>
+                <div className='about__content'>
                     <div className='h3'>datos personales</div>
                     
-                    <div className="about-info">
-                        <ul className="info-title">
+                    <div className="about__info">
+                        <ul className="about__title">
                         <li><Icon className='fa fa-user'></Icon> <span> Name: </span><b>Heynar Soto Holguin</b></li>
                         <li><Icon className='fa fa-birthday-cake'></Icon> <span> Birthdate: </span><b>June 1983</b></li>
                         <li><Icon className='fa fa-flag'></Icon> <span> Nationality: </span><b>Colombian</b></li>
@@ -32,7 +30,7 @@ const SobreMi = () => {
                         
                         </ul>
                     
-                    <ul className="info">
+                    <ul className="about__infor">
                     <li><Icon className='fa fa-map-marker'></Icon> <span> Address: </span><b>Buga, Colombia</b></li>
                         <li><Icon className='fa fa-language'></Icon> <span> Langages: </span><b>Spanish</b></li>
                         <li><Icon className='fas fa-biking'></Icon> <span> Hobby: </span><b>Mountain biking</b></li>
@@ -46,7 +44,7 @@ const SobreMi = () => {
             
             </ImagenStyled>
             <Separador/>
-            <Expeyedu/>
+            <Education/>
             <Separador/>
             <Habilidades/>
         </>
@@ -62,18 +60,16 @@ const ImagenStyled = styled.div`
 
         @media screen and (max-width:1250px){
         flex-direction: column;
-        .left-content{
+        .about__avatar{
             display: flex;
             justify-content: center;    
             }
         
             
         }
-    }
-    }
 
 
-    .left-content{
+    .about__avatar{
         
         img{
         width:100%;
@@ -81,8 +77,9 @@ const ImagenStyled = styled.div`
         border-bottom: 7px solid #fdb404;
         &::before{
         
-            webkit-animation: shine .85s;
+            -webkit-animation: shine .85s;
             animation: shine .85s; 
+            
         }
 
         @media screen and (max-width: 1250px){
@@ -115,14 +112,14 @@ const ImagenStyled = styled.div`
         }
     }
     
-    .container{
+    .about__container{
         width: 50%;
         margin-left:2%;
         z-index:-1;
         @media screen and (max-width: 1250px){
             width: 100%;
                 }
-        .right-content{
+        .about__content{
             width: 100%;
             margin-left:1%;
             @media screen and (max-width: 1250px){
@@ -150,7 +147,7 @@ const ImagenStyled = styled.div`
                             }
                 
             }
-            .about-info{
+            .about__info{
             display: flex;
             padding-bottom: 1.4rem;
             position: relative;
@@ -162,7 +159,7 @@ const ImagenStyled = styled.div`
             }
             
             
-                .info-title{
+                .about__title{
                     padding-right: 5rem;
                     
                     li{
@@ -194,16 +191,12 @@ const ImagenStyled = styled.div`
                                 font-size: 1.2rem;
                             }
                             @media screen and (max-width: 886px){
-                                font-size: 1rem;
+                                font-size: 1.2rem;
                             }
-                            @media screen and (max-width: 780px){
-                                font-size: 1.5rem;
-                            }
-                            @media screen and (max-width: 447px){
-                                font-size: .9rem;
-                            }
-                            @media screen and (max-width: 290px){
+                            @media screen and (max-width: 390px){
                                 font-size: .8rem;
+                            }
+                            
                             }
                         }
                     }
@@ -219,20 +212,15 @@ const ImagenStyled = styled.div`
                                 font-size: 1.2rem;
                             }
                             @media screen and (max-width: 886px){
-                                font-size: 1rem;
-                            }
-                            @media screen and (max-width: 780px){
                                 font-size: 1.5rem;
                             }
-                            @media screen and (max-width: 447px){
-                                font-size: .9rem;
-                            }
-                            @media screen and (max-width: 290px){
-                                font-size: .8rem;
+                            
+                            @media screen and (max-width: 390px){
+                                font-size: 1rem;
                             }
                     }
                 }
-                .info{
+                .about__infor{
                     padding-right: 3rem;
                     li{
                         font-weight: 600;
@@ -264,15 +252,9 @@ const ImagenStyled = styled.div`
                                 font-size: 1.2rem;
                             }
                             @media screen and (max-width: 886px){
-                                font-size: 1rem;
+                                font-size: 1.2rem;
                             }
-                            @media screen and (max-width: 780px){
-                                font-size: 1.5rem;
-                            }
-                            @media screen and (max-width: 447px){
-                                font-size: .9rem;
-                            }
-                            @media screen and (max-width: 290px){
+                            @media screen and (max-width: 390px){
                                 font-size: .8rem;
                             }
                         }
@@ -289,23 +271,18 @@ const ImagenStyled = styled.div`
                                 font-size: 1.2rem;
                             }
                             @media screen and (max-width: 886px){
-                                font-size: 1rem;
-                            }
-                            @media screen and (max-width: 780px){
                                 font-size: 1.5rem;
                             }
-                            @media screen and (max-width: 447px){
-                                font-size: .9rem;
-                            }
-                            @media screen and (max-width: 290px){
-                                font-size: .8rem;
+                            
+                            @media screen and (max-width: 390px){
+                                font-size: 1rem;
                             }
                     }
                 }
             }
             
         }
-    }
+    
 
     
 `; 
