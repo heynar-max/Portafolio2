@@ -8,7 +8,7 @@ const Tarjetas = ({title, subtitle, paragraph, image, vistaso, vista, turismo}) 
             <div className='container'>
                 <img src = {image} alt=''/>
                 <a href='https://portafolioheynar.netlify.app/' target="_blank" rel="noreferrer" >{vistaso}</a>
-                <a href='https://portafolioheynar.netlify.app/' target="_blank" rel="noreferrer" >{vista}</a>
+                <a href='https://ecommmercee.herokuapp.com/' target="_blank" rel="noreferrer" >{vista}</a>
                 <a href='https://turismobuga.netlify.app/' target="_blank" rel="noreferrer" >{turismo}</a>
                 <h4>{title}</h4>
                 <p>{paragraph}</p>

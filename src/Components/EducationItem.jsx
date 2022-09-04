@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Expeyeduitem = ({title, year, subtitle, text }) => {
+const EducationItem = ({title, year, subtitle, text }) => {
     return (
         <ExpeyeduitemStyled>
             <h5>{title}</h5>
@@ -20,4 +20,4 @@ const ExpeyeduitemStyled = styled.div`
     width: 100%;
 `;
 
-export default Expeyeduitem
+export default EducationItem

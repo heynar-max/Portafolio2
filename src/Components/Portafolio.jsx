@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import Tarjetas from './Tarjetas'
-import vista3 from '../Assets/vista.jpg'
+import vista3 from '../Assets/foto.jpg'
 import Porta from '../Assets/Portafolioimg.png'
 import Turismo from '../Assets/turismo.png'
 import { InnerLayout } from '../Styles/Layouts'
-const Portafolioweb = () => {
+const Portafolio = () => {
     return (
         <InnerLayout>
-        <PortawebStyled>
+        <PortafolioStyled>
         <div className='card'>
             <Tarjetas
             image={Porta}
@@ -30,11 +30,11 @@ const Portafolioweb = () => {
             />
             
         </div>
-        </PortawebStyled>
+        </PortafolioStyled>
         </InnerLayout>
     )
 }
-const PortawebStyled = styled.section`
+const PortafolioStyled = styled.section`
     .card{
         margin-top: 2rem;
         display: grid;
@@ -59,4 +59,4 @@ const PortawebStyled = styled.section`
         
     }
 `;
-export default Portafolioweb
+export default Portafolio

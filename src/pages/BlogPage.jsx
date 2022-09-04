@@ -1,17 +1,17 @@
 import React from 'react'
 import Title from '../Components/Title'
 import { MainLayout } from '../Styles/Layouts'
-import PortafolioCom from '../Components/PortafolioCom'
+import Blog from '../Components/Blog'
 
-const Portafolio = () => {
+const BlogPage = () => {
     return (
         <>
             <MainLayout>
                 <Title title={'mis'} title1={'diseños 3D'} span={'trabajos'}/>
-                <PortafolioCom/>
+                <Blog/>
             </MainLayout>
         </>
     )
 }
 
-export default Portafolio
+export default BlogPage

@@ -1,17 +1,17 @@
 import React from 'react'
-import Portafolioweb from '../Components/PortafoliowebCom'
+import Portafolio from '../Components/Portafolio'
 import Title from '../Components/Title'
 import { MainLayout } from '../Styles/Layouts'
 
-const PortafolioWeb = () => {
+const PortafolioPage = () => {
     return (
         <>
             <MainLayout>
-                <Title title={'mi'} title1={'portafolio'} span={'trabajo'}/>
-                <Portafolioweb/>
+                <Title title={'mi'} title1={'portafolio'} span={'portafolio'}/>
+                <Portafolio/>
             </MainLayout>
         </>
     )
 }
 
-export default PortafolioWeb
+export default PortafolioPage

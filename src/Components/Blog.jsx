@@ -9,7 +9,7 @@ import Imagen4 from '../img/imagen4.jpg'
 import Imagen5 from '../img/imagen5.jpg' 
 import Imagen6 from '../img/imagen6.jpg'
 
-const PortafolioCom = () => {
+const Blog = () => {
 
     const data=[
         {
@@ -58,7 +58,7 @@ const PortafolioCom = () => {
     }
     return (
         <MainLayout>
-            <PortafolioStyled>
+            <BlogStyled>
                 <div className={model? 'model open': 'model'}>
                     <img src={tempimage} alt=''/>
                     <Icon className='fa fa-times' onClick={() =>setModel(false)}></Icon>
@@ -77,12 +77,12 @@ const PortafolioCom = () => {
 
                         })}
                     </div>
-            </PortafolioStyled>
+            </BlogStyled>
         </MainLayout>
     )
 }
 
-const PortafolioStyled = styled.div`
+const BlogStyled = styled.div`
 
     .imagenportafolio{
         display: grid;
@@ -107,8 +107,7 @@ const PortafolioStyled = styled.div`
             
         width:100%;
         display: flex;
-        flexwrap: wrap;
-        heigth: 100vh;
+        flex-wrap: wrap;
         box-shadow: 0 6px 18px #e7e3de48;
         border-radius: 15px;
         cursor: pointer;
@@ -142,7 +141,6 @@ const PortafolioStyled = styled.div`
         justify-content: center;
         align-items: center;
         background-color: #000000;
-        transition: opacity .4s ease; visibility .4s ease, transform .5s ease-in-out;
         visibility: hidden;
         opacity: 0;
         transform: scale(0);
@@ -156,7 +154,7 @@ const PortafolioStyled = styled.div`
             top: 10px;
             right: 10px;
             width: 2rem;
-            heigth: 2rem;
+            height: 2rem;
             cursor: pointer;
             
 
@@ -194,4 +192,4 @@ const PortafolioStyled = styled.div`
     }
     
 `;
-export default PortafolioCom
+export default Blog
